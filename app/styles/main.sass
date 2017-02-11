@@ -1,0 +1,92 @@
+// bower:scss
+// endbower
+
+img
+  max-width: 100%
+
+html
+  height: 100%
+  min-height: 100%
+
+body
+  color: #2C3238
+  height: auto
+  min-height: 100%
+  background: #ccd6e8
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif
+  background-image: linear-gradient(to bottom, #ccd6e8, #f1f4fb), linear-gradient(#f1f4fb, #f1f4fb)
+  background-image: url(../images/png/md/bg.png)
+  background-position: center top
+  background-repeat: no-repeat
+  // background-size: contain
+
+.container
+  padding-right: 10px
+  padding-left: 10px
+  margin-right: auto
+  margin-left: auto
+  @media (min-width: 768px)
+    width: 760px
+  @media (min-width: 992px)
+    width: 980px
+  @media (min-width: 1100px)
+    width: 1080px
+  &-fluid
+    padding-right: 10px
+    padding-left: 10px
+    margin-right: auto
+    margin-left: auto
+
+
+.nb-wrapper
+  position: static
+  padding-top: 60px
+.nb-header
+  top: 0
+  left: 0
+  height: 50px
+  width: 100%
+  position: fixed
+  overflow: hidden
+  background: url('../images/png/xs/header.png') center no-repeat
+  @media (min-width: 768px)
+    height: 52px
+    background: url('../images/png/md/menu.png') center no-repeat
+.nb-main
+  position: static
+  min-height: 2500px // del
+  &__header
+    margin: 0
+    color: #FFFFFF
+    font-size: 30px
+    line-height: 1.2
+    text-align: center
+    letter-spacing: 2.3px
+    font-family: FuturaNewBold-Reg
+  @media (min-width: 768px)
+    &__header
+      font-size: 60px
+      line-height: 1.2
+      letter-spacing: 4.6px
+
+.nb-info
+  background: #F1F4FB
+  padding: 40px 10px 30px
+  &__text
+    opacity: 0.5
+    color: #747B88
+    font-size: 14px
+    line-height: 17px
+    letter-spacing: 0
+    font-family: FuturaNewBook-Reg
+  .container
+    max-width: 650px
+.nb-footer
+  display: none
+  position: static
+  background: #222222
+  @media (min-width: 768px)
+    display: block
+
+
+
