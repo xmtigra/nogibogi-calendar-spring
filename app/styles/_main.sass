@@ -49,4 +49,53 @@
     &__logo
       margin-bottom: 68px
 
+.nb-main-section
+  position: static
+
+.nb-main-top
+  position: static
+
+.nb-main-list
+  position: static
+
+.nb-main-bottom
+  position: static
+  text-align: center
+  padding: 50px 0
+  &__more
+    text-transform: uppercase
+    font-family: FuturaNewDemi-Reg
+    font-size: 14px
+    color: #747B88
+    letter-spacing: 2px
+    border: 2px solid rgba(116, 123, 136, 0.7)
+    border-radius: 3px
+    display: inline-block
+    font-weight: 400
+    padding: 20px
+    background: #edf1f9
+    padding: 12px 31px
+    line-height: 1
+    transition: background 0.2s
+    user-select: none
+    &:hover
+      color: #fff
+      cursor: pointer
+      background: darken(#289D6F, 5%)
+      border-color: darken(#289D6F, 5%)
+    &:active
+      color: #fff
+      cursor: pointer
+      background: lighten(#289D6F, 5%)
+      border-color: lighten(#289D6F, 5%)
+    &:focus
+      outline: none
+    &_active
+      width: 170px
+      height: 42px
+      font-size: 0
+      background: transparent url('../images/svg/ico-more.svg') center no-repeat !important
+      background-size: 42px 52px
+      border: none !important
+      cursor: default !important
 

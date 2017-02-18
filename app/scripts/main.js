@@ -13,3 +13,16 @@ $('body').on('click', '.nb-menu__toggle', function () {
   $(this).closest('.nb-header').find('.nb-menu').toggle();
   $(this).closest('.nb-header').toggleClass('nb-header_opened');
 });
+
+
+$('body').on('click', '.nb-main-bottom__more', function () {
+  var _self = $(this);
+  if ($(this)[0].hasAttribute('disabled') === false) {
+    $(this).addClass('nb-main-bottom__more_active');
+    $(this).attr('disabled', 'disabled');
+    setTimeout(function () {
+      $(_self).removeClass('nb-main-bottom__more_active');
+      $(_self).removeAttr('disabled', 'disabled');
+    }, 2000);
+  }
+});
