@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="description" content="">
@@ -11,7 +11,7 @@
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" href="../bower_components/normalize-css/normalize.css">
+    <link rel="stylesheet" href="/bower_components/normalize-css/normalize.css">
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -26,12 +26,35 @@
     <![endif]-->
 
     <div class="nb-wrapper">
-      <header class="nb-header"></header>
+      <header class="nb-header">
+        <div class="container">
+          <div class="nb-header__side nb-header__side_left">
+            <a href="#" class="nb-header__logo">
+              <img src="images/svg/logo-nb2.svg" alt="" class="nb-header__img">
+            </a>
+          </div>
+          <div class="nb-header__side nb-header__side_right">
+            <div class="nb-menu__toggle"></div>
+            <nav class="nb-menu">
+              <ul>
+                <li><a href="#">Тренировки</a></li>
+                <li><a href="#">Питание</a></li>
+                <li><a href="#">Экипировка</a></li>
+                <li><a href="#">Триатлон</a></li>
+                <li><a href="#">Еще</a></li>
+                <li class="nb-menu__calendar active"><a href="#">Календарь</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
       <div class="nb-main">
         <div class="container">
-          <h1 class="nb-main__header">
-            КАЛЕНДАРЬ СОРЕВНОВАНИЙ
-          </h1>
+          <div class="nb-main-sponsor__header">КАЛЕНДАРЬ СОРЕВНОВАНИЙ</div>
+          <div class="nb-main-sponsor__text">при поддержке</div>
+          <div class="nb-main-sponsor__logo">
+            <img src="images/svg/logo-nb.svg" alt="new balance" class="nb-main-sponsor__img">
+          </div>
         </div>
       </div>
       <div class="nb-info">
