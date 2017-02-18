@@ -3,6 +3,7 @@ const gulp = require('gulp');
 const gulpLoadPlugins = require('gulp-load-plugins');
 const browserSync = require('browser-sync').create();
 const del = require('del');
+const inline_base64 = require('gulp-inline-base64');
 const wiredep = require('wiredep').stream;
 const runSequence = require('run-sequence');
 
@@ -20,6 +21,7 @@ gulp.task('styles', () => {
       precision: 10,
       includePaths: ['.']
     }).on('error', $.sass.logError))
+    .pipe(inline_base64({ baseDir: 'app/images/', maxSize: 14 * 1024, debug: true }))
     .pipe($.autoprefixer({browsers: ['> 1%', 'last 2 versions', 'Firefox ESR']}))
     .pipe($.sourcemaps.write())
     .pipe(gulp.dest('.tmp/styles'))

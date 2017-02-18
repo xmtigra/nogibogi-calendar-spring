@@ -11,7 +11,6 @@
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" href="/bower_components/normalize-css/normalize.css">
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -26,6 +25,7 @@
     <![endif]-->
 
     <div class="nb-wrapper">
+      <!-- nb-header -->
       <header class="nb-header">
         <div class="container">
           <div class="nb-header__side nb-header__side_left">
@@ -47,16 +47,21 @@
             </nav>
           </div>
         </div>
-      </header>
+      </header> <!-- / nb-header -->
+      <!-- nb-main -->
       <div class="nb-main">
         <div class="container">
-          <div class="nb-main-sponsor__header">КАЛЕНДАРЬ СОРЕВНОВАНИЙ</div>
-          <div class="nb-main-sponsor__text">при поддержке</div>
-          <div class="nb-main-sponsor__logo">
-            <img src="images/svg/logo-nb.svg" alt="new balance" class="nb-main-sponsor__img">
-          </div>
+          <!-- nb-main-sponsor -->
+          <div class="nb-main-sponsor">
+            <div class="nb-main-sponsor__header">КАЛЕНДАРЬ СОРЕВНОВАНИЙ</div>
+            <div class="nb-main-sponsor__text">при поддержке</div>
+            <div class="nb-main-sponsor__logo">
+              <img src="images/svg/logo-nb.svg" alt="new balance" class="nb-main-sponsor__img">
+            </div>
+          </div> <!-- / nb-main-sponsor -->
         </div>
-      </div>
+      </div> <!-- / nb-main -->
+      <!-- nb-info -->
       <div class="nb-info">
         <div class="container">
           <div class="nb-info__text">
@@ -65,12 +70,13 @@
             <p>When she writes the blog post and links to the article, she gets to choose the anchor text for the link pointing at the article. She could choose something like “click here,” but more likely, she will choose something that it is relevant to the article. In this case, she chooses “psychological effects of marker color choice.” Someone else who links to the same article might use the link anchor text, "marker color choice and its effect on the brain."</p>
           </div>
         </div>
-      </div>
+      </div> <!-- / nb-info -->
+      <!-- nb-footer -->
       <footer class="nb-footer">
         <div class="container">
           <img src="/images/png/md/footer.png" alt="footer">
         </div>
-      </footer>
+      </footer> <!-- / nb-footer -->
     </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
