@@ -1,7 +1,6 @@
 
 .nb-main
   position: static
-  min-height: 2500px // del
   padding-top: 11px
   @media (min-width: 768px)
     padding-top: 48px
@@ -10,7 +9,7 @@
 .nb-main-sponsor
   &__header
     margin: 0
-    color: #FFFFFF
+    color: #FFF
     font-size: 30px
     line-height: 1.2
     text-align: center
@@ -27,7 +26,7 @@
     line-height: 1.33
     letter-spacing: 1px
     text-align: center
-    color: #ffffff
+    color: #fff
     margin-bottom: 25px
   &__logo
     margin: 0 auto
@@ -51,17 +50,99 @@
 
 .nb-main-section
   position: static
+  background: #F1F4FB
+  background-image: linear-gradient(#CCD6E8 0%, #F1F4FB 28%)
+  &__container
+    padding: 0
+
+
 
 .nb-main-top
   position: static
+  margin: 0 19px 30px 19px
+  background: #FFF
+  display: block
+  text-align: center
+  border-radius: 5px
+  overflow: hidden
+  cursor: pointer
+  &__btn
+    padding: 15px 13px 13px 28px
+    font-size: 14px
+    color: #289D6F
+    display: inline-block
+    text-align: center
+    letter-spacing: 2px
+    line-height: 1
+    position: relative
+    text-transform: uppercase
+    font-family: FuturaNewDemi-Reg
+    &[data-start]:after
+      content: attr(data-start)
+      background: #289D6F
+      border-radius: 50%
+      left: 3px
+      position: absolute
+      top: 0
+      bottom: 0
+      margin: auto
+      width: 12px
+      height: 16px
+      font-size: 12px
+      line-height: 1.4
+      color: #fff
+      padding-left: 2px
+      padding-right: 1px
+      text-align: center
+    &:before
+      position: absolute
+      content: ''
+      left: 0
+      top: 0
+      bottom: 0
+      margin: auto
+      background: url('../images/svg/ico-filter.svg') center no-repeat
+      background-size: 20px 20px
+      border-radius: 50%
+      overflow: hidden
+      width: 20px
+      height: 20px
+  @media (min-width: 1100px)
+    display: none
+
+
+.nb-main-list-menu
+  display: none
+  @media (min-width: 1100px)
+    display: block
+    height: 55px
+    background: #fff
+    padding: 12px 60px 0
 
 .nb-main-list
   position: static
+  position: relative
+  &__item
+    background: #FFF
+    box-shadow: 0 1px 3px 0 rgba(204,214,232,0.50)
+    height: 193px
+    margin-bottom: 10px
+  .nb-main-section__container
+    padding: 0
+  @media (min-width: 768px)
+    .nb-main-section__container
+      padding: 30px 30px 0
+  @media (min-width: 1100px)
+    .nb-main-section__container
+      padding: 30px 60px 0
+
+
+
 
 .nb-main-bottom
   position: static
   text-align: center
-  padding: 50px 0
+  padding: 40px 0 50px
   &__more
     text-transform: uppercase
     font-family: FuturaNewDemi-Reg

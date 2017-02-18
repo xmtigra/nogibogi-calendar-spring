@@ -26,3 +26,15 @@ $('body').on('click', '.nb-main-bottom__more', function () {
     }, 2000);
   }
 });
+
+$('body').on('click', function () {
+  if ($(this).hasClass('opened-mobile-filter')) {
+    $(this).removeClass('opened-mobile-filter');
+  }
+});
+
+$('body').on('click', '.nb-main-top__btn', function (e) {
+  $(this).closest('body').toggleClass('opened-mobile-filter');
+  return false;
+});
+
