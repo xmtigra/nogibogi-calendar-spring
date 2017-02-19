@@ -38,3 +38,8 @@ $('body').on('click', '.nb-main-top', function (e) {
   return false;
 });
 
+
+$('body').on('click', '.nb-main-menu__item', function (e) {
+  $(this).addClass('nb-main-menu__item_active').siblings('li').removeClass('nb-main-menu__item_active');
+  return false;
+});
