@@ -10,10 +10,26 @@
   &__item
     display: inline-block
     padding: 19px 0 17px
+    cursor: pointer
     &:not(:first-child)
       margin-left: 30px
-    &_opened ul
-      display: block
+    &_opened
+      a
+        color: #4AB986
+        border-color: #289D6F
+      ul
+        display: block
+        position: relative
+        &:before
+          width: 13px
+          height: 13px
+          background: #4AB986
+          content: ''
+          position: absolute
+          right: 63px
+          top: -6px
+          margin: auto
+          transform: rotate(45deg)
     &_slim
       position: relative
       &.nb-main-filter__item_opened ul

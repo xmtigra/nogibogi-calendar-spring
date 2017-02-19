@@ -47,8 +47,8 @@ $('body').on('click', '.nb-main-top', function (e) {
   return false;
 });
 
-$('body').on('click', '.nb-main-filter__a', function (e) {
-  $(this).closest('.nb-main-filter__item').toggleClass('nb-main-filter__item_opened').siblings('.nb-main-filter__item').removeClass('nb-main-filter__item_opened');
+$('body').on('click', '.nb-main-filter__item', function (e) {
+  $(this).toggleClass('nb-main-filter__item_opened').siblings('.nb-main-filter__item').removeClass('nb-main-filter__item_opened');
   return false;
 });
 
