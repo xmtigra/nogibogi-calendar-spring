@@ -1,2 +1,28 @@
 .nb-article
   background: #fff
+  &__header
+    height: 360px
+    background: url('../images/png/md/article.png') center no-repeat
+  &__content
+    padding: 20px
+  &__footer
+    padding: 20px
+    text-align: center
+  &__map
+    max-width: 100%
+    margin-bottom: 35px
+  &__text
+    margin: 0 auto
+    max-width: 695px
+    font-family: FuturaNewBook-Reg
+    font-size: 20px
+    color: #2C3238
+    letter-spacing: 0
+    line-height: 30px
+  @media (min-width: 768px)
+    &__content
+      padding: 20px 60px
+    &__footer
+      padding: 20px 60px
+    &__map
+      margin-bottom: 45px
