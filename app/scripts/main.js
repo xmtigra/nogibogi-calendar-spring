@@ -40,6 +40,17 @@ $('body').on('click', '.nb-main-top', function (e) {
 
 
 $('body').on('click', '.nb-main-menu__item', function (e) {
-  $(this).addClass('nb-main-menu__item_active').siblings('li').removeClass('nb-main-menu__item_active');
+  if ($(this).hasClass('nb-main-menu__item_active') === false) {
+    $(this).addClass('nb-main-menu__item_active').siblings('li').removeClass('nb-main-menu__item_active');
+    var sort = $(this).attr('data-sort');
+    $(this).closest('.nb-main-section').find('.nb-main-list__item').hide();
+
+    if (sort && sort !== '' && sort !== 'all') {
+      $(this).closest('.nb-main-section').find('.nb-main-list__item[data-sort="'+sort+'"]').show();
+    } else {
+      $(this).closest('.nb-main-section').find('.nb-main-list__item').show();
+    }
+
+  }
   return false;
 });
