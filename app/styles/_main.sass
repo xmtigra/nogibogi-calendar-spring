@@ -125,10 +125,95 @@
   &__item
     background: #FFF
     box-shadow: 0 1px 3px 0 rgba(204,214,232,0.50)
-    height: 193px
     margin-bottom: 10px
+    padding: 23px 29px 18px 40px
+    position: relative
+    &_flag
+      &:before
+        position: absolute
+        left: 0
+        top: 29px
+        content: ''
+        width: 17px
+        height: 12px
+      &-orange:before
+        background: url('../images/svg/ico-flag-orange.svg') center no-repeat
+        background-size: 17px 12px
+      &-red:before
+        background: url('../images/svg/ico-flag-red.svg') center no-repeat
+        background-size: 17px 12px
+  &__time
+    font-family: FuturaNewDemi-Reg
+    font-size: 20px
+    color: #747B88
+    letter-spacing: 0
+    margin-bottom: 10px
+  &__place
+    font-family: FuturaNewDemi-Reg
+    font-size: 20px
+    color: #000000
+    letter-spacing: 0.56px
+    line-height: 23px
+    margin-bottom: 10px
+  &__category-list
+    font-family: FuturaNewBook-Reg
+    color: #9A9DAC
+    font-size: 0
+    margin-bottom: 10px
+  &__category-item
+    letter-spacing: 0
+    line-height: 23px
+    font-size: 16px
+    &:not(:last-child):after
+      content: '\00B7'
+      width: 5px
+      height: 5px
+      font-size: 29px
+      color: #9A9DAC
+      overflow: hidden
+      z-index: 2
+      line-height: 5px
+      margin-left: 8px
+      margin-right: 8px
+      vertical-align: middle
+  &__city
+    font-family: FuturaNewBook-Reg
+    font-size: 18px
+    color: #2C3238
+    letter-spacing: 0
+    padding-left: 37px
+    position: relative
+    margin-bottom: 10px
+    &:before
+      content: ''
+      width: 28px
+      height: 20px
+      position: absolute
+      z-index: 1
+      background: #d2d2d2
+      border-radius: 3px
+      overflow: hidden
+      background-size: 28px 20px
+      left: 0
+      top: 0
+    &_usa:before
+      background: url('../images/svg/ico-usa.svg') center no-repeat
+      background-size: 28px 20px
+    &_nl:before
+      background: url('../images/svg/ico-nl.svg') center no-repeat
+      background-size: 28px 20px
+    &_gb:before
+      background: url('../images/svg/ico-gb.svg') center no-repeat
+      background-size: 28px 20px
+    &_gr:before
+      background: url('../images/svg/ico-gr.svg') center no-repeat
+      background-size: 28px 20px
+
   .nb-main-section__container
     padding: 0
+  @media (min-width: 480px)
+    .nb-main-section__container
+      padding: 15px 15px 0
   @media (min-width: 768px)
     .nb-main-section__container
       padding: 30px 30px 0
@@ -173,10 +258,10 @@
       outline: none
     &_active
       width: 170px
-      height: 42px
+      height: 40px
       font-size: 0
-      background: transparent url('../images/svg/ico-more.svg') center no-repeat !important
-      background-size: 42px 52px
+      background: transparent url('../images/svg/ico-more.svg') top center no-repeat !important
+      background-size: 40px 50px
       border: none !important
       cursor: default !important
 
