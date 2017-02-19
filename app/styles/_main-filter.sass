@@ -1,0 +1,79 @@
+.nb-main-filter
+  position: static
+  padding: 0
+  margin: 0
+  &__list
+    padding: 0
+    margin: 0
+    list-style-type: none
+    font-size: 0
+  &__item
+    display: inline-block
+    padding: 19px 0 17px
+    &:not(:first-child)
+      margin-left: 30px
+    &_opened ul
+      display: block
+    &_slim
+      position: relative
+      &.nb-main-filter__item_opened ul
+        display: block
+      ul
+        width: 170px
+        top: 67px
+        left: 5px
+        z-index: 7
+        position: relative
+        &:before
+          width: 13px
+          height: 13px
+          background: #4AB986
+          content: ''
+          position: absolute
+          left: 0
+          right: 0
+          top: -6px
+          margin: auto
+          transform: rotate(45deg)
+    &_full
+      &.nb-main-filter__item_opened ul
+        display: block
+      ul
+        left: 0
+        width: 100%
+        z-index: 5
+        top: 55px
+    ul
+      display: none
+      height: 200px
+      position: absolute
+      background-image: linear-gradient(0deg, #72C7A1 0%, #4AB986 100%)
+  &__a
+    font-size: 15px
+    font-family: FuturaNewBook-Reg
+    font-size: 16px
+    line-height: 1.1s
+    color: #747B88
+    letter-spacing: 0
+    border-bottom: 1px dotted #747B88
+    vertical-align: middle
+    display: inline-block
+    text-decoration: none
+    margin-right: 10px
+    &:hover
+      color: #289D6F
+      border-color: #289D6F
+  &__span
+    background: #289D6F
+    border-radius: 50%
+    overflow: hidden
+    vertical-align: middle
+    width: 18px
+    height: 18px
+    display: inline-block
+    text-align: center
+    line-height: 1.5
+    font-family: FuturaNewBook-Reg
+    font-size: 12px
+    color: #FFFFFF
+    letter-spacing: 0

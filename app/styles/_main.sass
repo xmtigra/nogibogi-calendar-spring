@@ -117,6 +117,7 @@
   position: static
   position: relative
   &__item
+    display: block
     transition: box-shadow 0.2s
     background: #FFF
     box-shadow: 0 1px 3px 0 rgba(204,214,232,0.50)
@@ -172,10 +173,9 @@
     &[href]
       color: currentColor
       text-decoration: none
-      border-bottom: 1px solid transparent
       &:hover
         color: #2D79E3
-        border-color: lighten(#2D79E3, 10%)
+        text-decoration: underline
   &__category-list, &__social-list
     font-family: FuturaNewBook-Reg
     color: #9A9DAC
@@ -309,6 +309,7 @@
     line-height: 1
     transition: background 0.2s
     user-select: none
+    text-decoration: none
     &:hover
       color: #fff
       cursor: pointer
@@ -323,10 +324,10 @@
       outline: none
     &_active
       width: 170px
-      height: 40px
+      height: 39px
       font-size: 0
       background: transparent url('../images/svg/ico-more.svg') top center no-repeat !important
-      background-size: 40px 50px
+      background-size: 39px 50px
       border: none !important
       cursor: default !important
 

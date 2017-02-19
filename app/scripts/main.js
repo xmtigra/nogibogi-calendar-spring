@@ -25,16 +25,30 @@ $('body').on('click', '.nb-main-bottom__more', function () {
       $(_self).removeAttr('disabled', 'disabled');
     }, 2000);
   }
+  return false;
 });
 
-$('body').on('click', function () {
+$('body').on('click', function (e) {
   if ($(this).hasClass('opened-mobile-filter')) {
     $(this).removeClass('opened-mobile-filter');
   }
+  var filterItem = $('.nb-main-filter__item');
+  if (filterItem && filterItem.length > 0 && $(filterItem).hasClass('nb-main-filter__item_opened')) {
+    var myParent = $(e.target).closest('.nb-main-filter__item');
+    if (myParent.length === 0) {
+      $(filterItem).removeClass('nb-main-filter__item_opened');
+    }
+  }
+
 });
 
 $('body').on('click', '.nb-main-top', function (e) {
   $(this).closest('body').toggleClass('opened-mobile-filter');
+  return false;
+});
+
+$('body').on('click', '.nb-main-filter__a', function (e) {
+  $(this).closest('.nb-main-filter__item').toggleClass('nb-main-filter__item_opened').siblings('.nb-main-filter__item').removeClass('nb-main-filter__item_opened');
   return false;
 });
 
