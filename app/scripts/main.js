@@ -33,7 +33,7 @@ $('body').on('click', function () {
   }
 });
 
-$('body').on('click', '.nb-main-top__btn', function (e) {
+$('body').on('click', '.nb-main-top', function (e) {
   $(this).closest('body').toggleClass('opened-mobile-filter');
   return false;
 });
