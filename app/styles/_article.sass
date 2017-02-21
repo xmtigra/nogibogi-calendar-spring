@@ -1,5 +1,6 @@
 .nb-article
   background: #fff
+  padding-bottom: 55px
   &__header
     height: 360px
     background: url('../images/png/md/article.png') center no-repeat
@@ -26,3 +27,89 @@
       padding: 20px 60px
     &__map
       margin-bottom: 45px
+
+
+.social-list
+  font-size: 0
+  text-align: center
+  &__icon
+    display: inline-block
+    vertical-align: top
+    border: 1px solid rgba(169,176,191,0.5)
+    border-radius: 100px
+    width: 100px
+    height: 40px
+    overflow: hidden
+    line-height: 38px
+    padding: 4px
+    &:not(:last-child)
+      margin-right: 10px
+  &__a
+    font-family: ProximaNova-Bold
+    font-size: 12px
+    color: #2C3238
+    letter-spacing: 1px
+    display: inline-block
+    text-decoration: none
+    line-height: 18px
+    position: relative
+    &:before
+      position: absolute
+      left: 0
+      top: 0
+      bottom: 0
+      margin: auto
+      width: 20px
+      height: 20px
+      content: ''
+    &_fb
+      padding-left: 20px
+      &:before
+        width: 8px
+        height: 16px
+        background: url('../images/svg/ico-fb.svg') center no-repeat
+        background-size: 8px 16px
+    &_tw
+      padding-left: 28px
+      &:before
+        width: 18px
+        height: 14px
+        background: url('../images/svg/ico-tw.svg') center no-repeat
+        background-size: 18px 14px
+    &_gp
+      padding-left: 34px
+      &:before
+        width: 26px
+        height: 18px
+        background: url('../images/svg/ico-gp.svg') center no-repeat
+        background-size: 26px 18px
+
+.nb-article-info
+  display: flex
+  justify-content: space-between
+  align-items: flex-start
+  padding: 20px 0 50px 0
+  &__item
+    position: static
+    padding-right: 40px
+  &__number
+    display: inline
+    vertical-align: bottom
+    font-family: FuturaNewDemi-Reg
+    font-size: 36px
+    color: #2C3238
+    letter-spacing: -0.5px
+  &__value
+    font-family: FuturaNewBook-Reg
+    font-size: 20px
+    color: #2C3238
+    letter-spacing: 0
+    line-height: 21px
+    display: inline
+    vertical-align: bottom
+  &__text
+    font-family: FuturaNewBook-Reg
+    font-size: 18px
+    color: #747B88
+    letter-spacing: 0
+    line-height: 17px
