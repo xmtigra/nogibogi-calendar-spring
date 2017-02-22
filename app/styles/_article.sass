@@ -1,9 +1,14 @@
 .nb-article
   background: #fff
   padding-bottom: 10px
-  &__header
-    height: 360px
-    background: url('../images/png/md/article.png') center no-repeat
+  &__figure
+    margin: 0
+    margin-left: -10px
+    margin-right: -10px
+    img
+      max-width: initial
+      height: initial
+      width: 100%
   &__content
     padding: 15px
   &__footer
@@ -26,6 +31,12 @@
     color: #2C3238
     letter-spacing: 0
     line-height: 30px
+  @media (min-width: 480px)
+    &__figure
+      display: none
+    &__header
+      height: 360px
+      background: url('../images/png/md/article.png') center no-repeat
   @media (min-width: 768px)
     padding-bottom: 52px
     &__content
