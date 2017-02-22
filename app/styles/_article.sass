@@ -1,17 +1,23 @@
 .nb-article
   background: #fff
-  padding-bottom: 55px
+  padding-bottom: 10px
   &__header
     height: 360px
     background: url('../images/png/md/article.png') center no-repeat
   &__content
-    padding: 20px
+    padding: 15px
   &__footer
     padding: 20px
     text-align: center
   &__map
     max-width: 100%
     margin-bottom: 35px
+    min-height: 300px
+    overflow: hidden
+    img
+      min-height: 300px
+      min-width: 290px
+      max-width: initial
   &__text
     margin: 0 auto
     max-width: 695px
@@ -21,6 +27,7 @@
     letter-spacing: 0
     line-height: 30px
   @media (min-width: 768px)
+    padding-bottom: 52px
     &__content
       padding: 20px 60px
     &__footer
@@ -29,21 +36,27 @@
       margin-bottom: 45px
 
 
+
+
 .social-list
   font-size: 0
+  padding: 0
   text-align: center
   &__icon
     display: inline-block
     vertical-align: top
     border: 1px solid rgba(169,176,191,0.5)
     border-radius: 100px
-    width: 100px
+    min-width: 90px
     height: 40px
     overflow: hidden
     line-height: 38px
     padding: 4px
-    &:not(:last-child)
-      margin-right: 10px
+    margin: 0px 10px 10px
+    &:first-child
+      margin-left: 0
+    &:last-child
+      margin-right: 0
   &__a
     font-family: ProximaNova-Bold
     font-size: 12px
@@ -84,14 +97,25 @@
         background: url('../images/svg/ico-gp.svg') center no-repeat
         background-size: 26px 18px
 
+  @media (min-width: 380px)
+    &__icon
+      min-width: 100px
+
 .nb-article-info
-  display: flex
-  justify-content: space-between
-  align-items: flex-start
-  padding: 20px 0 50px 0
+  // display: flex
+  // justify-content: space-between
+  // align-items: flex-start
+  // padding: 20px 0 50px 0
+  padding: 20px 0 20px 0
+  // flex-wrap: wrap
+  font-size: 0
+  +clr
   &__item
-    position: static
-    padding-right: 40px
+      width: 50%
+      max-width: 168px
+      display: inline-block
+      margin-bottom: 20px
+      text-align: left
   &__number
     display: inline
     vertical-align: bottom
@@ -113,3 +137,15 @@
     color: #747B88
     letter-spacing: 0
     line-height: 17px
+  @media (min-width: 450px)
+    position: static
+    text-align: center
+    &__item
+      text-align: center
+  @media (min-width: 1024px)
+    text-align: left
+    &__item
+      text-align: left
+      width: 20%
+      max-width: initial
+
