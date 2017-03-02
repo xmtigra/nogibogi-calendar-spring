@@ -284,3 +284,72 @@
   .nb-main-list__city
     display: inline-block
     margin-bottom: 8px
+  @media (min-width: 480px)
+    position: static
+    text-align: left
+    padding-top: 28px
+    &__ribbon
+      background: rgba(255,255,255,0.6)
+      color: #1a835a
+      text-align: left
+      padding-left: 15px
+      margin-bottom: 7px
+      &:before
+        content: none
+      &:after
+        border-color: transparent #1a835a transparent transparent
+    &__name
+      color: #fff
+      word-spacing: 5px
+      text-align: left
+      font-size: 32px
+      white-space: nowrap
+      overflow: hidden
+      text-overflow: ellipsis
+      margin-bottom: 65px
+    &__time
+      color: #fff
+      display: inline-block
+      margin-bottom: 5px
+      font-size: 20px
+      padding-left: 7px
+    &__category-simple
+      position: static
+      margin-bottom: 70px
+    &__category-item
+      color: rgba(255,255,255,0.6)
+      &:not(:first-child):before
+        color: rgba(255,255,255,0.6)
+    &__social-list
+      display: none
+    &__btn
+      color: #1a835a
+      background: #fff
+      display: inline-block
+      vertical-align: middle
+      margin-right: 17px
+      padding: 16px 23px 14px
+      border: 1px solid transparent
+      transition: color, background, border, 0.2s
+      &:hover
+        color: #fff
+        background: #1a835a
+        border: 1px solid rgba(255,255,255,0.4)
+    &__price
+      color: rgba(255,255,255,0.6)
+      display: inline-block
+      vertical-align: middle
+    .nb-main-list__city
+      margin-bottom: 5px
+      font-size: 18px
+      width: initial !important
+      color: #fff
+      &:after
+        content: ','
+  @media (min-width: 768px)
+    padding-left: 60px
+  @media (min-width: 1024px)
+    position: relative
+    &__social-list
+      display: none
+
