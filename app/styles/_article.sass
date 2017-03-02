@@ -160,3 +160,127 @@
       width: 20%
       max-width: initial
 
+.nb-main-simple
+  text-align: center
+  padding: 34px 20px 24px
+  &__ribbon
+    color: #fff
+    background: #f22931
+    display: inline-block
+    padding: 0 20px
+    font-size: 15px
+    font-style: italic
+    height: 20px
+    line-height: 20px
+    position: relative
+    margin-bottom: 9px
+    &:before, &:after
+      top: 0
+      bottom: 0
+      content: ""
+      margin: auto
+      position: absolute
+    &:before
+      left: 0
+      width: 0
+      height: 0
+      border-style: solid
+      border-width: 10px 0 10px 7px
+      border-color: transparent transparent transparent #fff
+    &:after
+      right: 0
+      width: 0
+      height: 0
+      border-style: solid
+      border-width: 10px 7px 10px 0
+      border-color: transparent #fff transparent transparent
+  &__name
+    margin-bottom: 20px
+    color: #000000
+    font-size: 26px
+    line-height: 21px
+    text-align: center
+    line-height: 1
+    letter-spacing: 0
+    font-family: FuturaNewDemi-Reg
+    text-transform: uppercase
+    line-height: 1.2
+  &__time
+    font-family: FuturaNewBook-Reg
+    font-size: 18px
+    color: #2C3238
+    letter-spacing: 0
+    position: relative
+    margin-bottom: 16px
+  &__category-simple
+    font-family: FuturaNewBook-Reg
+    color: #9A9DAC
+    font-size: 0
+    margin-bottom: 20px
+  &__category-item
+    letter-spacing: 0
+    line-height: 23px
+    font-size: 16px
+    &:not(:first-child):before
+      content: '\00B7'
+      width: 5px
+      height: 5px
+      font-size: 29px
+      color: #9A9DAC
+      overflow: hidden
+      z-index: 2
+      line-height: 5px
+      margin-left: 8px
+      margin-right: 9px
+      display: inline-block
+      vertical-align: middle
+  &__social-list
+    font-family: FuturaNewBook-Reg
+    color: #9A9DAC
+    font-size: 0
+    margin-bottom: 22px
+  &__social-item
+    letter-spacing: 0
+    line-height: 23px
+    font-size: 18px
+    color: #2D79E3
+    text-decoration: underline
+    &:not(:first-child):before
+      content: '\00B7'
+      width: 5px
+      height: 5px
+      font-size: 29px
+      color: #9A9DAC
+      overflow: hidden
+      z-index: 2
+      line-height: 5px
+      margin-left: 13px
+      margin-right: 13px
+      display: inline-block
+      vertical-align: middle
+  &__btn
+    display: inline-block
+    border: 0
+    text-align: center
+    border-radius: 5px
+    overflow: hidden
+    background: #289D6F
+    text-overflow: ellipsis
+    overflow: hidden
+    color: #fff
+    font-family: FuturaNewDemi-Reg
+    font-size: 14px
+    letter-spacing: 2px
+    line-height: 0.9
+    text-decoration: none
+    padding: 16px 35px 14px
+    text-transform: uppercase
+    margin-bottom: 10px
+  &__price
+    font-family: FuturaNewBook-Reg
+    color: #9A9DAC
+    font-size: 16px
+    margin-bottom: 10px
+  .nb-main-list__city
+    display: inline-block
+    margin-bottom: 8px
