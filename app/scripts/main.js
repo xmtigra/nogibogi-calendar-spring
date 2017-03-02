@@ -48,8 +48,8 @@ $('body').on('click', '.nb-main-top', function (e) {
 });
 
 $('body').on('click', '.nb-main-filter__item', function (e) {
-  $(this).toggleClass('nb-main-filter__item_opened').siblings('.nb-main-filter__item').removeClass('nb-main-filter__item_opened');
-  return false;
+  $(this).addClass('nb-main-filter__item_opened').siblings('.nb-main-filter__item').removeClass('nb-main-filter__item_opened');
+  // return false;
 });
 
 

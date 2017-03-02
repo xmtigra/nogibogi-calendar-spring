@@ -68,7 +68,7 @@
         width: 100%
         z-index: 2
         top: 55px
-        height: 200px
+        padding: 0 60px 0 60px
         &:before
           width: 13px
           height: 13px
@@ -79,6 +79,10 @@
           top: -6px
           margin: auto
           transform: rotate(45deg)
+        li
+          padding: 0
+          margin: 0
+          border: 0
     ul
       display: none
       position: absolute
@@ -112,3 +116,84 @@
     font-size: 12px
     color: #FFFFFF
     letter-spacing: 0
+
+.form-filter
+  width: 100%
+  padding: 0
+  margin: 0
+  border: 0
+  padding-top: 6px
+  font-size: 20px
+  font-weight:
+  color: #fff
+  font-family: FuturaNewBook-Reg
+  &__row
+    height: 37px
+    line-height: 1
+    color: #fff
+    font-size: 0
+  &__row-item
+    display: inline-block
+    padding: 8px 13px 9px 15px
+    margin-right: 10px
+    border: 2px solid transparent
+    font-size: 16px
+    border-radius: 33px
+    overflow: hidden
+    font-family: FuturaNewBook-Reg
+    &_current
+      border: 2px solid #fff
+    &:hover
+      cursor: pointer
+      border: 2px solid rgba(255,255,255,0.5)
+  input[type="checkbox"]
+    position: abolute
+    width: 1px
+    height: 1px
+    opacity: 0
+    &:checked + label
+      border: 2px solid #fff
+      background: #fff
+      color: #1f9e6e
+
+  &__item
+    padding-bottom: 40px
+    padding-top: 30px
+    &:not(:last-of-type)
+      border-bottom: 1px solid rgba(255,255,255,0.5)
+  &__title
+    font-family: FuturaNewDemi-Reg
+    font-size: 18px
+    font-weight: normal
+    font-style: normal
+    font-stretch: normal
+    line-height: normal
+    letter-spacing: normal
+    color: #ffffff
+    margin-bottom: 10px
+  &__submit
+    border: 0
+    padding: 0
+    margin: 0
+    border-radius: 0
+    width: calc(100% + 120px)
+    text-align: center
+    margin-left: -60px
+    height: 50px
+    line-height: 50px
+    outline: none
+    height: 50px
+    background-color: rgba(40, 157, 111, 0.3)
+    font-family: FuturaNewDemi-Reg
+    font-size: 14px
+    font-weight: normal
+    font-style: normal
+    font-stretch: normal
+    line-height: normal
+    letter-spacing: 1.9px
+    color: #ffffff
+    text-transform: uppercase
+    cursor: pointer
+    &:hover
+      background-color: rgba(40, 157, 111, 0.6)
+

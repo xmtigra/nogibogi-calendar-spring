@@ -87,7 +87,7 @@
                     <nav class="nb-main-filter">
                       <ul class="nb-main-filter__list">
                         <li class="nb-main-filter__item nb-main-filter__item_slim">
-                          <a href="#" class="nb-main-filter__a">Где бежать</a>
+                          <a class="nb-main-filter__a">Где бежать</a>
                           <span class="nb-main-filter__span">4</span>
                           <ul>
                             <li>Украина</li>
@@ -103,10 +103,48 @@
                           </ul>
                         </li>
                         <li class="nb-main-filter__item nb-main-filter__item_full">
-                          <a href="#" class="nb-main-filter__a">Настройки</a>
+                          <a class="nb-main-filter__a">Настройки</a>
                           <span class="nb-main-filter__span">6</span>
                           <ul>
-                            <li>full</li>
+                            <li>
+                              <form action="" class="form-filter">
+                                <div class="form-filter__item">
+                                  <div class="form-filter__title">Какие дистанции вас интирисуют?</div>
+                                  <div class="form-filter__row">
+                                    <input type="checkbox" name="distance[]" value="all" id="all">
+                                    <label class="form-filter__row-item form-filter__row-item_current" for="all">Все</label>
+                                    <input type="checkbox" name="distance[]" value="upto5km" id="upto5km" checked>
+                                    <label class="form-filter__row-item" for="upto5km">До 5 км</label>
+                                    <input type="checkbox" name="distance[]" value="10km" id="10km">
+                                    <label class="form-filter__row-item" for="10km">10 км</label>
+                                    <input type="checkbox" name="distance[]" value="halfmarathon" id="halfmarathon" checked>
+                                    <label class="form-filter__row-item" for="halfmarathon">Полумарафон</label>
+                                    <input type="checkbox" name="distance[]" value="marathon" id="marathon">
+                                    <label class="form-filter__row-item" for="marathon">Марафон</label>
+                                    <input type="checkbox" name="distance[]" value="ultramarathon" id="ultramarathon">
+                                    <label class="form-filter__row-item" for="ultramarathon">Ультрамарафоны</label>
+                                  </div>
+                                </div>
+                                <div class="form-filter__item">
+                                  <div class="form-filter__title">В какое время года старт?</div>
+                                  <div class="form-filter__row">
+                                    <input type="checkbox" name="year[]" value="2017" id="y2017">
+                                    <label class="form-filter__row-item form-filter__row-item_current" for="y2017">2017</label>
+                                    <input type="checkbox" name="year[]" value="y2017-1" id="y2017-1">
+                                    <label class="form-filter__row-item" for="y2017-1">Зима</label>
+                                    <input type="checkbox" name="year[]" value="y2017-2" id="y2017-2">
+                                    <label class="form-filter__row-item" for="y2017-2">Весна</label>
+                                    <input type="checkbox" name="year[]" value="y2017-3" id="y2017-3" checked>
+                                    <label class="form-filter__row-item" for="y2017-3">Лето</label>
+                                    <input type="checkbox" name="year[]" value="y2017-4" id="y2017-4">
+                                    <label class="form-filter__row-item" for="y2017-4">Осень</label>
+                                    <input type="checkbox" name="year[]" value="y2018" id="y2018">
+                                    <label class="form-filter__row-item" for="y2018">2018</label>
+                                  </div>
+                                </div>
+                                <input type="submit" value="применить" class="form-filter__submit">
+                              </form>
+                            </li>
                           </ul>
                         </li>
                       </ul>
