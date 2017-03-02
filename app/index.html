@@ -301,7 +301,57 @@
         </div>
       </footer> <!-- / nb-footer -->
     </div>
+    <noindex>
+      <section class="nb-acardion">
+        <form action="#" method="post" name="filter">
+          <div>
+            <input id="ac-1" name="accordion-1" type="radio" />
+            <label class="nb-acardion__label" for="ac-1">Вид спорта</label>
+            <article class="nb-acardion__article">
+              Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows
+            </article>
+          </div>
+          <div>
+            <input id="ac-2" name="accordion-1" type="radio" checked/>
+            <label class="nb-acardion__label" for="ac-2">Дистанция</label>
+            <article class="nb-acardion__article">
 
+                <input type="checkbox" name="distance[]" value="all" id="distance1">
+                <label class="form-filter__row-item form-filter__row-item_current" for="distance1">Все</label>
+                <input type="checkbox" name="distance[]" value="upto5km" id="distance2" checked>
+                <label class="form-filter__row-item" for="distance2">До 5 км</label>
+                <input type="checkbox" name="distance[]" value="10km" id="distance3">
+                <label class="form-filter__row-item" for="distance3">10 км</label>
+                <input type="checkbox" name="distance[]" value="halfmarathon" id="distance4" checked>
+                <label class="form-filter__row-item" for="distance4">Полумарафон</label>
+                <input type="checkbox" name="distance[]" value="marathon" id="distance5">
+                <label class="form-filter__row-item" for="distance5">Марафон</label>
+                <input type="checkbox" name="distance[]" value="ultramarathon" id="distance6">
+                <label class="form-filter__row-item" for="distance6">Ультрамарафоны</label>
+
+            </article>
+          </div>
+          <div>
+            <input id="ac-3" name="accordion-1" type="radio" />
+            <label class="nb-acardion__label" for="ac-3">Где бежать</label>
+            <article class="nb-acardion__article">
+              You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a week to climb out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide... and only five made it out. Now we took an oath, that I'm breaking now. We said we'd say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold a candle to man.
+            </article>
+          </div>
+          <div>
+            <input id="ac-4" name="accordion-1" type="radio" />
+            <label class="nb-acardion__label" for="ac-4">В какое время года</label>
+            <article class="nb-acardion__article">
+              You see? It's curious. Ted did figure it out - time travel. And when we get back, we gonna tell everyone. How it's possible, how it's done, what the dangers are. But then why fifty years in the future when the spacecraft encounters a black hole does the computer call it an 'unknown entry event'? Why don't they know? If they don't know, that means we never told anyone. And if we never told anyone it means we never made it back. Hence we die down here. Just as a matter of deductive logic.
+            </article>
+          </div>
+          <div class="nb-acardion__bottom">
+            <input type="reset" value="Очистить" class="nb-acardion__reset">
+            <input type="submit" value="ПРИМЕНИТЬ" class="nb-acardion__submit">
+          </div>
+        </form>
+			</section>
+    </noindex>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

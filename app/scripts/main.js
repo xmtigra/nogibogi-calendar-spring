@@ -29,9 +29,12 @@ $('body').on('click', '.nb-main-bottom__more', function () {
 });
 
 $('body').on('click', function (e) {
-  if ($(this).hasClass('opened-mobile-filter')) {
-    $(this).removeClass('opened-mobile-filter');
-  }
+  // if ($(this).hasClass('opened-mobile-filter')) {
+  //   if (!$(e.target).closest('.nb-acardion').length) {
+  //     $(this).removeClass('opened-mobile-filter');
+  //     $(this).closest('body').find('.nb-acardion').hide();
+  //   }
+  // }
   var filterItem = $('.nb-main-filter__item');
   if (filterItem && filterItem.length > 0 && $(filterItem).hasClass('nb-main-filter__item_opened')) {
     var myParent = $(e.target).closest('.nb-main-filter__item');
@@ -43,8 +46,9 @@ $('body').on('click', function (e) {
 });
 
 $('body').on('click', '.nb-main-top', function (e) {
-  $(this).closest('body').toggleClass('opened-mobile-filter');
-  return false;
+  $(this).closest('body').addClass('opened-mobile-filter');
+  $(this).closest('body').find('.nb-acardion').show();
+  // return false;
 });
 
 $('body').on('click', '.nb-main-filter__item', function (e) {
