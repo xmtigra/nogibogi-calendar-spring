@@ -1,4 +1,9 @@
 {
+  "author": {
+    "name" : "Andriy Pyvovarchuk",
+    "email" : "andriypyvovarchuk@gmail.com",
+    "url" : "https://github.com/xmtigra/"
+  },
   "private": true,
   "engines": {
     "node": ">=4"
