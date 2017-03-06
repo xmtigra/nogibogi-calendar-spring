@@ -1,8 +1,8 @@
 {
   "author": {
-    "name" : "Andriy Pyvovarchuk",
-    "email" : "andriypyvovarchuk@gmail.com",
-    "url" : "https://github.com/xmtigra/"
+    "name": "Andriy Pyvovarchuk",
+    "email": "andriypyvovarchuk@gmail.com",
+    "url": "https://github.com/xmtigra/"
   },
   "private": true,
   "engines": {
@@ -49,5 +49,9 @@
       ]
     }
   },
-  "dependencies": {}
+  "dependencies": {
+    "gulp-cache": "^0.4.6",
+    "gulp-filter": "^4.0.0",
+    "gulp-sass": "^2.3.2"
+  }
 }
