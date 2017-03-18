@@ -72,27 +72,27 @@ $('body').on('click', '.nb-main-menu__item', function (e) {
 
 $('body').on('click', 'input[name="distance[]"]', function clickInputDistance(e) {
   if(this.value === 'all') {
-    $( 'input[name="distance[]"]').prop( "checked", false );
-    $( 'input[name="distance[]"][value="all"]').prop( "checked", true );
+    $( 'input[name="distance[]"]').prop( 'checked', false );
+    $( 'input[name="distance[]"][value="all"]').prop( 'checked', true );
   } else {
-    $( 'input[name="distance[]"][value="all"]').prop( "checked", false );
+    $( 'input[name="distance[]"][value="all"]').prop( 'checked', false );
   }
 });
 
 $('body').on('click', 'input[name="year[]"]', function clickInputDistance(e) {
   if(this.value === '2017') {
-    $( 'input[name="year[]"]').prop( "checked", false );
-    $( 'input[name="year[]"][value="2017"]').prop( "checked", true );
+    $( 'input[name="year[]"]').prop( 'checked', false );
+    $( 'input[name="year[]"][value="2017"]').prop( 'checked', true );
   } else {
-    $( 'input[name="year[]"][value="2017"]').prop( "checked", false );
+    $( 'input[name="year[]"][value="2017"]').prop( 'checked', false );
   }
 });
 
 $('body').on('click', 'input[name="year[]"]', function clickInputDistance(e) {
   if(this.value === 'y2018') {
-    $( 'input[name="year[]"]').prop( "checked", false );
-    $( 'input[name="year[]"][value="y2018"]').prop( "checked", true );
+    $( 'input[name="year[]"]').prop( 'checked', false );
+    $( 'input[name="year[]"][value="y2018"]').prop( 'checked', true );
   } else {
-    $( 'input[name="year[]"][value="y2018"]').prop( "checked", false );
+    $( 'input[name="year[]"][value="y2018"]').prop( 'checked', false );
   }
 });
