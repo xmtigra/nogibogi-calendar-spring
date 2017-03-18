@@ -2,9 +2,7 @@
   background: #fff
   padding-bottom: 10px
   &__figure
-    margin: 0
-    margin-left: -10px
-    margin-right: -10px
+    margin: 0 -10px 0 -10px 0
     img
       max-width: initial
       height: initial
@@ -26,7 +24,7 @@
   &__text
     margin: 0 auto
     max-width: 695px
-    font-family: FuturaNewBook-Reg
+    font-family: 'FuturaNewDemi-Reg', 'sans-serif'
     font-size: 20px
     color: #2C3238
     letter-spacing: 0
@@ -63,13 +61,13 @@
     overflow: hidden
     line-height: 38px
     padding: 4px
-    margin: 0px 10px 10px
+    margin: 0 10px 10px
     &:first-child
       margin-left: 0
     &:last-child
       margin-right: 0
   &__a
-    font-family: ProximaNova-Bold
+    font-family: 'ProximaNova-Bold', 'sans-serif'
     font-size: 12px
     color: #2C3238
     letter-spacing: 1px
@@ -107,20 +105,14 @@
         height: 18px
         background: url('../images/svg/ico-gp.svg') center no-repeat
         background-size: 26px 18px
-
   @media (min-width: 380px)
     &__icon
       min-width: 100px
 
 .nb-article-info
-  // display: flex
-  // justify-content: space-between
-  // align-items: flex-start
-  // padding: 20px 0 50px 0
+  @extend .clr
   padding: 20px 0 20px 0
-  // flex-wrap: wrap
   font-size: 0
-  +clr
   &__item
       width: 50%
       max-width: 168px
@@ -130,12 +122,12 @@
   &__number
     display: inline
     vertical-align: bottom
-    font-family: FuturaNewDemi-Reg
+    font-family: 'FuturaNewDemi-Reg', 'sans-serif'
     font-size: 36px
     color: #2C3238
     letter-spacing: -0.5px
   &__value
-    font-family: FuturaNewBook-Reg
+    font-family: 'FuturaNewDemi-Reg', 'sans-serif'
     font-size: 20px
     color: #2C3238
     letter-spacing: 0
@@ -146,7 +138,7 @@
     top: -4px
     left: 2px
   &__text
-    font-family: FuturaNewBook-Reg
+    font-family: 'FuturaNewDemi-Reg', 'sans-serif'
     font-size: 18px
     color: #747B88
     letter-spacing: 0
@@ -202,22 +194,20 @@
     margin-bottom: 20px
     color: #000000
     font-size: 26px
-    line-height: 21px
     text-align: center
-    line-height: 1
     letter-spacing: 0
-    font-family: FuturaNewDemi-Reg
+    font-family: 'FuturaNewDemi-Reg', 'sans-serif'
     text-transform: uppercase
     line-height: 1.2
   &__time
-    font-family: FuturaNewBook-Reg
+    font-family: 'FuturaNewDemi-Reg', 'sans-serif'
     font-size: 18px
     color: #2C3238
     letter-spacing: 0
     position: relative
     margin-bottom: 16px
   &__category-simple
-    font-family: FuturaNewBook-Reg
+    font-family: 'FuturaNewDemi-Reg', 'sans-serif'
     color: #9A9DAC
     font-size: 0
     margin-bottom: 20px
@@ -239,7 +229,7 @@
       display: inline-block
       vertical-align: middle
   &__social-list
-    font-family: FuturaNewBook-Reg
+    font-family: 'FuturaNewDemi-Reg', 'sans-serif'
     color: #9A9DAC
     font-size: 0
     margin-bottom: 22px
@@ -270,9 +260,8 @@
     overflow: hidden
     background: #289D6F
     text-overflow: ellipsis
-    overflow: hidden
     color: #fff
-    font-family: FuturaNewDemi-Reg
+    font-family: 'FuturaNewDemi-Reg', 'sans-serif'
     font-size: 14px
     letter-spacing: 2px
     line-height: 0.9
@@ -281,7 +270,7 @@
     text-transform: uppercase
     margin-bottom: 10px
   &__price
-    font-family: FuturaNewBook-Reg
+    font-family: 'FuturaNewDemi-Reg', 'sans-serif'
     color: #9A9DAC
     font-size: 16px
     margin-bottom: 10px

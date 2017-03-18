@@ -14,11 +14,11 @@
     line-height: 1.2
     text-align: center
     letter-spacing: 2.3px
-    font-family: FuturaNewBold-Reg
+    font-family: 'FuturaNewBold-Reg', sans-serif
     margin-bottom: 18px
   &__text
     opacity: 0.7
-    font-family: FuturaNewBook-Reg
+    font-family: 'FuturaNewBook-Reg', sans-serif
     font-size: 16px
     font-weight: normal
     font-style: normal
@@ -53,8 +53,7 @@
   &__container
     padding: 0
   @media (min-width: 1100px)
-    background: #F1F4FB
-    background-image: linear-gradient(#CCD6E8 0%, #F1F4FB 28%)
+    background: #f1f4fb linear-gradient(#CCD6E8 0%, #F1F4FB 28%)
     &_item
       background-image: linear-gradient(rgba(204, 214, 232, 0.38) 0%, #F1F4FB 28%)
 
@@ -80,7 +79,7 @@
     line-height: 1
     position: relative
     text-transform: uppercase
-    font-family: FuturaNewDemi-Reg
+    font-family: 'FuturaNewDemi-Reg', sans-serif
     &[data-start]:after
       content: attr(data-start)
       background: #289D6F
@@ -116,7 +115,6 @@
 
 
 .nb-main-list
-  position: static
   position: relative
   &__item
     display: block
@@ -128,7 +126,7 @@
     position: relative
     &:hover
       box-shadow: 0 10px 15px 0 #E3E9F7
-      cursor: pointer;
+      cursor: pointer
     &_fixed
       background: #FFFAE6
     &_done
@@ -151,11 +149,12 @@
         background: url('../images/svg/ico-flag-red.svg') center no-repeat
         background-size: 17px 12px
   &__time
-    font-family: FuturaNewDemi-Reg
+    font-family: 'FuturaNewDemi-Reg', sans-serif
     font-size: 20px
     color: #747B88
     letter-spacing: 0
     margin-bottom: 10px
+    width: 100%
     &[href]
       display: block
       color: currentColor
@@ -167,7 +166,7 @@
     position: static
   &__place
     display: inline-block
-    font-family: FuturaNewDemi-Reg
+    font-family: 'FuturaNewDemi-Reg', sans-serif
     font-size: 20px
     color: #000000
     letter-spacing: 0.56px
@@ -180,7 +179,7 @@
         color: #2D79E3
         text-decoration: underline
   &__category-list, &__social-list
-    font-family: FuturaNewBook-Reg
+    font-family: 'FuturaNewBook-Reg', sans-serif
     color: #9A9DAC
     font-size: 0
     margin-bottom: 10px
@@ -208,7 +207,7 @@
       display: inline-block
       vertical-align: middle
   &__city
-    font-family: FuturaNewBook-Reg
+    font-family: 'FuturaNewBook-Reg', sans-serif
     font-size: 18px
     color: #2C3238
     letter-spacing: 0
@@ -257,13 +256,12 @@
   &__title
     color: #000000
     font-size: 28px
-    line-height: 21px
     text-align: center
     line-height: 1
     letter-spacing: 0
     padding: 40px 0 40px
-    font-family: FuturaNewDemi-Reg
-    background-image: linear-gradient(#CCD6E8 0%, #F1F4FB 28%);
+    font-family: 'FuturaNewDemi-Reg', sans-serif
+    background-image: linear-gradient(#CCD6E8 0%, #F1F4FB 28%)
   .nb-main-section__container
     padding: 0
   @media (min-width: 1100px)
@@ -313,7 +311,7 @@
   padding: 40px 0 50px
   &__more
     text-transform: uppercase
-    font-family: FuturaNewDemi-Reg
+    font-family: 'FuturaNewDemi-Reg', sans-serif
     font-size: 14px
     color: #747B88
     letter-spacing: 2px
@@ -321,7 +319,6 @@
     border-radius: 3px
     display: inline-block
     font-weight: 400
-    padding: 20px
     background: #edf1f9
     padding: 12px 31px
     line-height: 1
