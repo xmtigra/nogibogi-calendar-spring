@@ -217,13 +217,13 @@
     &:before
       content: ''
       width: 28px
-      height: 20px
+      height: 21px
       position: absolute
       z-index: 1
       background: #d2d2d2
       border-radius: 3px
       overflow: hidden
-      background-size: 28px 20px
+      background-size: 28px 21px
       left: 0
       top: 0
     &[href]
@@ -235,22 +235,33 @@
         text-decoration: underline
     &_usa:before
       background: url('../images/svg/ico-usa.svg') center no-repeat
-      background-size: 28px 20px
+      background-size: 28px 21px
     &_nl:before
       background: url('../images/svg/ico-nl.svg') center no-repeat
-      background-size: 28px 20px
+      background-size: 28px 21px
     &_gb:before
       background: url('../images/svg/ico-gb.svg') center no-repeat
-      background-size: 28px 20px
+      background-size: 28px 21px
     &_jp:before
       background: url('../images/svg/ico-jp.svg') center no-repeat
-      background-size: 28px 20px
+      background-size: 28px 21px
     &_gr:before
       background: url('../images/svg/ico-gr.svg') center no-repeat
-      background-size: 28px 20px
+      background-size: 28px 21px
     &_de:before
       background: url('../images/svg/ico-de.svg') center no-repeat
-      background-size: 28px 20px
+      background-size: 28px 21px
+
+
+$countryList: ad ea af ag ai al am ao aq ar as at au aw ax az ba bb bd be bf bg bh bi bj bl bm bn bo bq br bs bt bv bw by bz ca cc cd cf cg ch ci ck cl cm cn co cr cu cv cw cx cy cz de
+
+@each $country in $countryList
+  .nb-main-list__city_#{$country}:before
+    background: url('../images/flags/#{$country}.svg') center no-repeat
+    background-size: 28px 21px
+
+
+
   &__social-list
     display: none
   &__title
